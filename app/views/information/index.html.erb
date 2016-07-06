@@ -1,5 +1,16 @@
-<h1><%= @no_information %></h1>
+<h2><%= @no_information %></h2>
 
-<%= image_tag "gohome" %>
-
-<%= link_to "Go back home", root_path %>
+<main>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-1 col-md-1"></div>
+      <div class="col-xs-6 col-sm-3 col-md-3">
+        <%= image_tag "gohome", class: 'img-responsive' %>
+      </div>
+      <div class="col-xs-6 col-sm-7 col-md-7">
+        <%= link_to "Click me to go back home", root_path, class: 'btn btn-default' %>
+      </div>
+      <div class="col-sm-1 col-md-1"></div>
+    </div>
+  </div>
+</main>
