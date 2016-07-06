@@ -1,2 +1,9 @@
-<h1>Bootstrap, What?</h1>
-<p>Using Bootstrap in Rails!</p>
+<%= @title %>
+
+<ul>
+  <% @button_options.each do |button| %>
+    <li><%= link_to "#{button}",
+    class: 'btn btn-large btn-default'
+    %></li>
+  <% end %>
+</ul>
