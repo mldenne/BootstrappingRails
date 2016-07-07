@@ -1,0 +1,26 @@
+<h2><%= @title %></h2>
+<br>
+
+<main>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-2">
+        <%= image_tag "clickme",
+        class: 'img-responsive'
+        %>
+      </div>
+      <div class="col-md-7">
+        <ul class="list-group">
+          <% @button_options.each do |button| %>
+            <li><%= link_to "#{button}",
+            information_path(button),
+            class: 'btn btn-success btn-lg btn-block'
+            %></li>
+          <% end %>
+        </ul>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+</main>
