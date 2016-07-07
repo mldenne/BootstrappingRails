@@ -1,14 +1,6 @@
 class WelcomeController < ApplicationController
   def index
-    @title = "Welcome!"
-    @button_options = %w(click_me no_click_me ugh_click_me)
+    @title = "Welcome to a website that will effectively annoy you!"
+    @button_options = ["Click Me!", "No, Click Me!!", "Please, Click Me!!"]
   end
-
-  def button_options
-    if click_me
-      "Click me!"
-      elsi
-
-  end
-
 end
